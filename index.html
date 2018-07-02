@@ -21,20 +21,84 @@
 		/*
 		PLACE YOUR STYLES HERE
 		*/
+		.spacer {margin-top: 10vh; margin-bottom: 10vh;}
+		.spacer-b {margin-bottom: 10vh;}
+		.spacer-t {margin-top: 10vh;}
+		.feature {background: #fff; border: 1px solid #ccc; height: 260px;}
+		.f-1 {margin-top: -100px;}
+		.f-2 {margin-top: -150px;}
 	</style>
 </head>
 <body>
 
-	<!--
-	PLACE YOUR CONTENT HERE
-	-->
-<div class="hero">
-
-		<div class="mouse">
-			<span></span>
+	<!-- Paralax Hero with color overlay -->
+	<div class="hero parallax" style="height: 80vh;">
+		<div class="image" data-type="background" data-speed="3" style="background: url(https://unsplash.it/1920/1920/?random) no-repeat center center;">
 		</div>
+		<div class="overlay" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; opacity: .2; background: blue">
+		</div>
+		<div class="container" data-type="content">
+			<div class="row align-items-center">
+				<div class="col-md-7 col-lg-5">
+					<h1>Vivamus vitae rhoncus felis, ut rutrum neque</h1>
+					<a href="#" class="btn btn-primary">Click the link!</a>
+				</div>
+				<!--<div class="mouse">
+					<span></span>
+				</div>-->
+			</div>
+		</div>
+	</div>
 
-</div>
+	<div class="container features">
+		<div class="row">
+			<div class="col-xl-3 col-md-6">
+				<div class="feature f-1"></div>
+			</div>
+			<div class="col-xl-3 col-md-6">
+				<div class="feature f-2"></div>
+			</div>
+			<div class="col-xl-3 col-md-6">
+				<div class="feature f-1"></div>
+			</div>
+			<div class="col-xl-3 col-md-6">
+				<div class="feature f-2"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row spacer-t mb-5">
+			<div class="col text-center">
+				<h1>Lorem ipsum dolor sit amet</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xl-3 col-md-6">
+				Lorem ipsum dolor<br>
+				Lorem ipsum dolor Lorem ipsum dolor<br>
+				Lorem ipsum dolor Lorem
+			</div>
+			<div class="col-xl-3 col-md-6">
+				Lorem ipsum dolor Lorem<br>
+				Lorem ipsum dolor Lorem ipsum dolor<br>
+				Lorem ipsum dolor
+			</div>
+			<div class="col-xl-3 col-md-6">
+				Lorem ipsum dolor<br>
+				Lorem ipsum dolor Lorem ipsum dolor<br>
+				Lorem ipsum dolor Lorem
+			</div>
+			<div class="col-xl-3 col-md-6">
+				Lorem ipsum dolor Lorem<br>
+				Lorem ipsum dolor Lorem ipsum dolor<br>
+				Lorem ipsum dolor
+			</div>
+		</div>
+		<div class="row mt-5 spacer-b">
+			<div class="col text-center"><a href="#" class="btn btn-primary">Click the link!</a></div>
+		</div>
+	</div>
 
 <!-- Scripts -->
 

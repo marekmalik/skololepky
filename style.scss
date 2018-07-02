@@ -1,6 +1,29 @@
-/* colores */
+@font-face {
+	font-family: "Redacted";
+	src: url("assets/fonts/Redacted-Regular.ttf");
+}
+
+/* colors */
 $color1: #ccc;
 $color2: #bbb;
+$color3: #fff;
+
+html, body {
+	font-family: "Redacted";
+	font-size: 16px;
+	line-height: 1.6;
+	color: $color2;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {margin: 0 0 20px 0; line-height: 1.4;}
+/*h1 {font-size: 49px;}
+h2 {font-size: 44px;}
+h3 {font-size: 39px;}*/
+
+p {opacity: .5; line-height: 2; font-size: 16px;}
+a {color: $color2;}
+a:hover, a:focus, .btn:hover, .btn:focus {opacity: .7; color: inherit;}
+.well {padding: 20px; margin-bottom: 20px; background-color: rgba(86,61,124,.15); border: 1px solid rgba(86,61,124,.2);}
 
 /* Animace skrolování myší */
 .mouse {
@@ -9,9 +32,9 @@ $color2: #bbb;
 	width: 26px;
 	height: 46px;
 	border-radius: 13px;
-	border: 2px solid white;
+	border: 2px solid $color3;
 	position: absolute;
-    bottom: 25vh;
+    bottom: 5vh;
     left: 50%;
 
     span {
@@ -20,7 +43,7 @@ $color2: #bbb;
 		width: 2px;
 		height: 6px;
 		border-radius: 4px;
-		background: white;
+		background: $color3;
 		border: 1px solid transparent;
 		-webkit-animation-duration: 1s;
 		animation-duration: 1s;
@@ -60,4 +83,44 @@ $color2: #bbb;
 }
 /* Konec - Animace skrolování myší */
 
-.hero {background: $color1; height: 80vh;}
+.hero {
+	/*background: url(https://unsplash.it/g/1920/800/?random) no-repeat center center;*/
+	background-color: $color2;
+	color: $color3;
+	a, a:hover {color: $color3;}
+	.btn {border-color: $color3;}
+	.btn-primary, .btn-primary:hover {border-color: $color3;}
+	.row {height: 80vh;}
+}
+.slice [class*='container'] {padding-top: 10vh; padding-bottom: 10vh;}
+.slice.px-0 [class*='container'] {padding-top: 0 !important; padding-bottom: 0 !important;}
+.slice {border-bottom: 1px solid $color2;}
+
+.parallax {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+	justify-content: space-around;
+	position: relative;
+	width: 100%;
+	flex: 1;
+	overflow: hidden;
+	background-color: $color2;
+	.image {
+		background-attachment: fixed;
+		background-size: cover;
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+	}
+}
+
+.btn {
+	border: 1px solid $color2;
+	border-radius: 0;
+	padding: 15px 30px;
+	font-size: 21px;
+}
+.btn-primary, .btn-primary:hover {background-color: transparent; color: $color2; border: 1px solid $color2;}
+figure img {margin-bottom: 1rem;}
