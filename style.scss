@@ -1,6 +1,6 @@
 /* colores */
-$color1: #111;
-$color2: #222;
+$color1: #ccc;
+$color2: #bbb;
 
 /* Animace skrolování myší */
 .mouse {
@@ -9,7 +9,7 @@ $color2: #222;
 	width: 26px;
 	height: 46px;
 	border-radius: 13px;
-	border: 2px solid $color1;
+	border: 2px solid white;
 	position: absolute;
     bottom: 25vh;
     left: 50%;
@@ -20,7 +20,7 @@ $color2: #222;
 		width: 2px;
 		height: 6px;
 		border-radius: 4px;
-		background: #fff;
+		background: white;
 		border: 1px solid transparent;
 		-webkit-animation-duration: 1s;
 		animation-duration: 1s;
