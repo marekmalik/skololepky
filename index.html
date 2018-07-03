@@ -21,15 +21,53 @@
 		/*
 		PLACE YOUR STYLES HERE
 		*/
-		.spacer {margin-top: 10vh; margin-bottom: 10vh;}
-		.spacer-b {margin-bottom: 10vh;}
-		.spacer-t {margin-top: 10vh;}
+		.spacer {padding-top: 8vh; padding-bottom: 8vh; border-bottom: 1px solid #ccc;}
+		/*.spacer {margin-bottom: 8vh;}
+		.spacer {margin-top: 8vh;}*/
 		.feature {background: #fff; border: 1px solid #ccc; height: 260px;}
 		.f-1 {margin-top: -100px;}
 		.f-2 {margin-top: -150px;}
+		.card, .card-header:first-child {border-radius: 0;}
+		#accordion .card:nth-child(-n+4) {
+		  border-bottom: 0;
+		}
+		.btn.card-header {border: none;}
+		.card-body {padding: 1.25rem 30px;}
 	</style>
 </head>
 <body>
+<header id="uvod">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#uvod">Start Bootstrap</a>
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fa fa-bars"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#pouziti">Použití</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#reference">Reference</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#produkty">Produkty</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#faq">Časté dotazy</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#podklady">Podklady</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 	<!-- Paralax Hero with color overlay -->
 	<div class="hero parallax" style="height: 80vh;">
@@ -49,26 +87,42 @@
 			</div>
 		</div>
 	</div>
+</header>
 
+<section id="vyhody">
 	<div class="container features">
 		<div class="row">
 			<div class="col-xl-3 col-md-6">
-				<div class="feature f-1"></div>
+				<div class="feature f-1 p-4">
+					Lorem ipsum dolor Lorem<br>
+					Lorem ipsum dolor
+				</div>
 			</div>
 			<div class="col-xl-3 col-md-6">
-				<div class="feature f-2"></div>
+				<div class="feature f-2 p-4">
+					Lorem ipsum dolor Lorem<br>
+					Lorem ipsum dolor
+				</div>
 			</div>
 			<div class="col-xl-3 col-md-6">
-				<div class="feature f-1"></div>
+				<div class="feature f-1 p-4">
+					Lorem ipsum dolor Lorem<br>
+					Lorem ipsum dolor
+				</div>
 			</div>
 			<div class="col-xl-3 col-md-6">
-				<div class="feature f-2"></div>
+				<div class="feature f-2 p-4">
+					Lorem ipsum dolor Lorem<br>
+					Lorem ipsum dolor
+				</div>
 			</div>
 		</div>
 	</div>
+</section>
 
+<section id="pouziti"  class="spacer">
 	<div class="container">
-		<div class="row spacer-t mb-5">
+		<div class="row mb-5">
 			<div class="col text-center">
 				<h1>Lorem ipsum dolor sit amet</h1>
 			</div>
@@ -95,10 +149,210 @@
 				Lorem ipsum dolor
 			</div>
 		</div>
-		<div class="row mt-5 spacer-b">
+		<div class="row mt-5">
 			<div class="col text-center"><a href="#" class="btn btn-primary">Click the link!</a></div>
 		</div>
 	</div>
+</section>
+
+<section id="reference"  class="spacer">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-10 text-center">
+				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row mt-3">
+					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+						<img alt="" src="https://unsplash.it/1920/1180/?random" class="img-fluid">
+					</a>
+					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+						<img alt="" src="https://unsplash.it/1919/1179/?random" class="img-fluid">
+					</a>
+					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+						<img alt="" src="https://unsplash.it/1918/1178/?random" class="img-fluid">
+					</a>
+					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+						<img alt="" src="https://unsplash.it/1917/1177/?random" class="img-fluid">
+					</a>
+				</div>
+			</div>
+			<div class="col-md-12 mt-4 text-center">
+				<a href="/kontakt" class="btn btn-lg btn-primary">Kontaktujte nás</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="produkty"  class="spacer">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-10 text-center mb-4">
+				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<h3>Samolepky na podlahy</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+				<a href="#" target="_blank">Více informací</a>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<h3>Samolepky na podlahy</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+				<a href="#" target="_blank">Více informací</a>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<h3>Samolepky na podlahy</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+				<a href="#" target="_blank">Více informací</a>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<h3>Samolepky na podlahy</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+				<a href="#" target="_blank">Více informací</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="faq"  class="spacer">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-10 text-center mb-4">
+				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+			</div>
+			<div class="col-lg-10">
+				<div id="accordion" class="mb-4">
+					<div class="card">
+						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" id="heading1">
+							Collapsible Group Item #1
+						</a>
+
+						<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+							<div class="card-body">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" id="heading2">
+							Collapsible Group Item #1
+						</a>
+
+						<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+							<div class="card-body">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" id="heading3">
+							Collapsible Group Item #1
+						</a>
+
+						<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+							<div class="card-body">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4" id="heading4">
+							Collapsible Group Item #1
+						</a>
+
+						<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+							<div class="card-body">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5" id="heading5">
+							Collapsible Group Item #1
+						</a>
+
+						<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+							<div class="card-body">
+								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="lead text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="podklady"  class="spacer">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-10 text-center mb-4">
+				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+			</div>
+			<div class="col-lg-8 mb-4">
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</div>
+			<div class="col-12 text-center">
+				<a href="#" class="btn btn-primary">Click the link!</a>
+				<a href="#" class="btn btn-primary">Click the link!</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="kontakt" class="spacer">
+	<div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-lg-10 text-center mb-4">
+				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus.</p>
+			</div>
+			<div class="col-lg-6 pr-lg-5">
+				<h2 class="mb-0">Vivamus vitae rhoncus felis</h2>
+				<p class="lead mb-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
+				<p class="mt-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis. Vivamus vitae rhoncus felis.</p>
+			</div>
+			<div class="col-lg-6">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="well">well</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="well">well</div>
+					</div>
+					<div class="col-12">
+						<div class="well">well</div>
+						<a href="#" class="btn btn-primary">Click the link!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container mt-4 mb-4">
+		<div class="row align-items-center">
+			<div class="col-lg-8">
+				<p class="mb-0">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
+			</div>
+			<div class="col-lg-4">
+				
+			</div>
+		</div>
+	</div>
+</footer>
 
 <!-- Scripts -->
 
