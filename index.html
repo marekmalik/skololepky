@@ -36,334 +36,352 @@
 		#pouziti li:before {content: "\2014\a0"; padding-right: 12px;}
 		#pouziti li {list-style-type: none;}
 		#pouziti ul {padding-left: 0 !important;}
+		.navbar {padding: 1rem 1rem;}
+		@media (min-width: 992px) {
+			#mainNav.navbar-shrink {
+			    border-color: rgba(34,34,34,.1);
+			    background-color: #fff;
+			    border-bottom: 1px solid #ccc;
+
+			}
+			#mainNav.navbar-shrink a {color: #aaa !important;}
+			.navbar-expand-lg .navbar-nav .nav-link {padding: 0;}
+			.navbar-expand-lg .navbar-nav .nav-item {
+			    padding-right: 1rem;
+			    padding-left: 1rem;
+			}
+			.navbar-expand-lg .navbar-nav .nav-item:last-child {
+				padding-right: 0;
+			}
+		}
 	</style>
 </head>
 <body>
-<header id="uvod">
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-		<div class="container">
-			<a class="navbar-brand js-scroll-trigger" href="#uvod">Start Bootstrap</a>
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				Menu
-				<i class="fa fa-bars"></i>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#pouziti">Použití</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#reference">Reference</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#produkty">Produkty</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#faq">Časté dotazy</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#podklady">Podklady</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<!-- Paralax Hero with color overlay -->
-	<div class="hero parallax" style="height: 80vh;">
-		<div class="image" data-type="background" data-speed="3" style="background: url(https://unsplash.it/1920/1920/?random) no-repeat center center;">
-		</div>
-		<div class="overlay" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; opacity: .2; background: blue">
-		</div>
-		<div class="container" data-type="content">
-			<div class="row align-items-center">
-				<div class="col-md-8 col-lg-6">
-					<h1 class="mb-4">Vivamus vitae rhoncus felis, ut rutrum neque</h1>
-					<a href="#" class="btn btn-primary">Click the link!</a>
-				</div>
-				<!--<div class="mouse">
-					<span></span>
-				</div>-->
-			</div>
-		</div>
-	</div>
-</header>
-
-<section id="vyhody">
-	<div class="container features">
-		<div class="row">
-			<div class="col-xl-3 col-sm-6">
-				<div class="feature f-1 p-4">
-					Lorem ipsum dolor Lorem<br>
-					Lorem ipsum dolor
+	<header id="uvod">
+		<nav class="navbar nav-scroll navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand js-scroll-trigger" href="#uvod">Start Bootstrap</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#pouziti">Použití</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#reference">Reference</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#produkty">Produkty</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#faq">Časté dotazy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#podklady">Podklady</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a>
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="col-xl-3 col-sm-6">
-				<div class="feature f-2 p-4">
-					Lorem ipsum dolor Lorem<br>
-					Lorem ipsum dolor
-				</div>
-			</div>
-			<div class="col-xl-3 col-sm-6">
-				<div class="feature f-1 p-4">
-					Lorem ipsum dolor Lorem<br>
-					Lorem ipsum dolor
-				</div>
-			</div>
-			<div class="col-xl-3 col-sm-6">
-				<div class="feature f-2 p-4">
-					Lorem ipsum dolor Lorem<br>
-					Lorem ipsum dolor
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+		</nav>
 
-<section id="pouziti" class="spacer">
-	<div class="container">
-		<div class="row mb-5">
-			<div class="col text-center">
-				<h1>Lorem ipsum dolor sit amet</h1>
+		<!-- Paralax Hero with color overlay -->
+		<div class="hero parallax" style="height: 85vh;">
+			<div class="image" data-type="background" data-speed="3" style="background: url(https://unsplash.it/1920/1920/?random) no-repeat center center;">
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-xl-3 col-sm-6">
-				<ul>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor Lorem ipsum</li>
-					<li>Lorem ipsum dolor Lorem</li>
-				</ul>
+			<div class="overlay" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; opacity: .2; background: blue">
 			</div>
-			<div class="col-xl-3 col-sm-6">
-				<ul>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor Lorem ipsum</li>
-					<li>Lorem ipsum dolor Lorem</li>
-				</ul>
-			</div>
-			<div class="col-xl-3 col-sm-6">
-				<ul>
-					<li>Lorem ipsum dolor Lorem</li>
-					<li>Lorem ipsum dolor Lorem ipsum</li>
-					<li>Lorem ipsum dolor</li>
-				</ul>
-			</div>
-			<div class="col-xl-3 col-sm-6">
-				<ul>
-					<li>Lorem ipsum dolor</li>
-					<li>Lorem ipsum dolor Lorem ipsum</li>
-					<li>Lorem ipsum dolor Lorem</li>
-				</ul>
-			</div>
-		</div>
-		<div class="row mt-5">
-			<div class="col text-center"><a href="#" class="btn btn-primary">Click the link!</a></div>
-		</div>
-	</div>
-</section>
-
-<section id="reference"	class="spacer">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-lg-10 text-center">
-				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
-				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="row mt-3">
-					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
-						<img alt="" src="https://unsplash.it/1920/1180/?random" class="img-fluid">
-					</a>
-					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
-						<img alt="" src="https://unsplash.it/1919/1179/?random" class="img-fluid">
-					</a>
-					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
-						<img alt="" src="https://unsplash.it/1918/1178/?random" class="img-fluid">
-					</a>
-					<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
-						<img alt="" src="https://unsplash.it/1917/1177/?random" class="img-fluid">
-					</a>
-				</div>
-			</div>
-			<div class="col-md-12 mt-4 text-center">
-				<a href="/kontakt" class="btn btn-lg btn-primary">Kontaktujte nás</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="produkty"	class="spacer">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-lg-10 text-center mb-4">
-				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
-				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-6">
-				<h3>Samolepky na podlahy</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-				<a href="#" target="_blank">Více informací</a>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<h3>Samolepky na podlahy</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-				<a href="#" target="_blank">Více informací</a>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<h3>Samolepky na podlahy</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-				<a href="#" target="_blank">Více informací</a>
-			</div>
-			<div class="col-lg-3 col-md-6">
-				<h3>Samolepky na podlahy</h3>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-				<a href="#" target="_blank">Více informací</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="faq"	class="spacer">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-lg-10 text-center mb-4">
-				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
-				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
-			</div>
-			<div class="col-lg-10">
-				<div id="accordion" class="mb-4">
-					<div class="card">
-						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" id="heading1">
-							Collapsible Group Item #1
-						</a>
-
-						<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
-							<div class="card-body">
-								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" id="heading2">
-							Collapsible Group Item #1
-						</a>
-
-						<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-							<div class="card-body">
-								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" id="heading3">
-							Collapsible Group Item #1
-						</a>
-
-						<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
-							<div class="card-body">
-								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4" id="heading4">
-							Collapsible Group Item #1
-						</a>
-
-						<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-							<div class="card-body">
-								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5" id="heading5">
-							Collapsible Group Item #1
-						</a>
-
-						<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-							<div class="card-body">
-								<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<p class="lead text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="podklady"	class="spacer">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-lg-10 text-center mb-4">
-				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
-				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
-			</div>
-			<div class="col-lg-8 mb-4">
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-			</div>
-			<div class="col-12 text-center">
-				<a href="#" class="btn btn-primary">Click the link!</a>
-				<a href="#" class="btn btn-primary">Click the link!</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="kontakt" class="spacer">
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-lg-10 text-center mb-4">
-				<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
-				<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus.</p>
-			</div>
-			<div class="col-lg-6 pr-lg-5">
-				<h2 class="mb-0">Vivamus vitae rhoncus felis</h2>
-				<p class="lead mb-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
-				<p class="mt-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis. Vivamus vitae rhoncus felis.</p>
-			</div>
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="well">well</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="well">well</div>
-					</div>
-					<div class="col-12">
-						<div class="well">well</div>
+			<div class="container" data-type="content">
+				<div class="row align-items-center">
+					<div class="col-md-8 col-lg-6">
+						<h1 class="mb-4">Vivamus vitae rhoncus felis, ut rutrum neque</h1>
 						<a href="#" class="btn btn-primary">Click the link!</a>
 					</div>
+					<!--<div class="mouse">
+						<span></span>
+					</div>-->
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</header>
 
-<footer>
-	<div class="container mt-4 mb-4">
-		<div class="row align-items-center">
-			<div class="col-lg-8">
-				<p class="mb-0">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
-			</div>
-			<div class="col-lg-4">
-				
+	<section id="vyhody">
+		<div class="container features">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<div class="feature f-1 p-4">
+						Lorem ipsum dolor Lorem<br>
+						Lorem ipsum dolor
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="feature f-2 p-4">
+						Lorem ipsum dolor Lorem<br>
+						Lorem ipsum dolor
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="feature f-1 p-4">
+						Lorem ipsum dolor Lorem<br>
+						Lorem ipsum dolor
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="feature f-2 p-4">
+						Lorem ipsum dolor Lorem<br>
+						Lorem ipsum dolor
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
+	</section>
+
+	<section id="pouziti" class="spacer">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col text-center">
+					<h1>Lorem ipsum dolor sit amet</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor Lorem ipsum</li>
+						<li>Lorem ipsum dolor Lorem</li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor Lorem ipsum</li>
+						<li>Lorem ipsum dolor Lorem</li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<ul>
+						<li>Lorem ipsum dolor Lorem</li>
+						<li>Lorem ipsum dolor Lorem ipsum</li>
+						<li>Lorem ipsum dolor</li>
+					</ul>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<ul>
+						<li>Lorem ipsum dolor</li>
+						<li>Lorem ipsum dolor Lorem ipsum</li>
+						<li>Lorem ipsum dolor Lorem</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col text-center"><a href="#" class="btn btn-primary">Click the link!</a></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reference"	class="spacer">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 text-center">
+					<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+					<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row mt-3">
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+							<img alt="" src="https://unsplash.it/1920/1180/?random" class="img-fluid">
+						</a>
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+							<img alt="" src="https://unsplash.it/1919/1179/?random" class="img-fluid">
+						</a>
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+							<img alt="" src="https://unsplash.it/1918/1178/?random" class="img-fluid">
+						</a>
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+							<img alt="" src="https://unsplash.it/1917/1177/?random" class="img-fluid">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-12 mt-4 text-center">
+					<a href="/kontakt" class="btn btn-lg btn-primary">Kontaktujte nás</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="produkty"	class="spacer">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 text-center mb-4">
+					<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+					<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>Samolepky na podlahy</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+					<a href="#" target="_blank">Více informací</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Samolepky na podlahy</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+					<a href="#" target="_blank">Více informací</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Samolepky na podlahy</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+					<a href="#" target="_blank">Více informací</a>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Samolepky na podlahy</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+					<a href="#" target="_blank">Více informací</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="faq"	class="spacer">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 text-center mb-4">
+					<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+					<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+				</div>
+				<div class="col-lg-10">
+					<div id="accordion" class="mb-4">
+						<div class="card">
+							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" id="heading1">
+								Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis
+							</a>
+
+							<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+								<div class="card-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" id="heading2">
+								Vivamus vitae rhoncus felis, ut rutrum
+							</a>
+
+							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+								<div class="card-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" id="heading3">
+								Vivamus vitae rhoncus felis, ut rutrum Vivamus
+							</a>
+
+							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+								<div class="card-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4" id="heading4">
+								Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis
+							</a>
+
+							<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+								<div class="card-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5" id="heading5">
+								Vivamus vitae rhoncus felis, ut rutrum
+							</a>
+
+							<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+								<div class="card-body">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="lead text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="podklady"	class="spacer">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 text-center mb-4">
+					<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+					<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis</p>
+				</div>
+				<div class="col-lg-8 mb-4">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+				</div>
+				<div class="col-12 text-center">
+					<a href="#" class="btn btn-primary">Click the link!</a>
+					<a href="#" class="btn btn-primary">Click the link!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="kontakt" class="spacer">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<div class="col-lg-10 text-center mb-4">
+					<h1 class="mb-0">Vivamus vitae rhoncus felis, ut rutrum</h1>
+					<p class="lead">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus.</p>
+				</div>
+				<div class="col-lg-6 pr-lg-5">
+					<h2 class="mb-0">Vivamus vitae rhoncus felis</h2>
+					<p class="lead mb-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
+					<p class="mt-4">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis. Vivamus vitae rhoncus felis.</p>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="well">well</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="well">well</div>
+						</div>
+						<div class="col-12">
+							<div class="well">well</div>
+							<a href="#" class="btn btn-primary">Click the link!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container mt-4 mb-4">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<p class="mb-0">Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae.</p>
+				</div>
+				<div class="col-lg-4">
+					
+				</div>
+			</div>
+		</div>
+	</footer>
 
 <!-- Scripts -->
 
@@ -374,6 +392,19 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="js/parallax.js"></script>
+
+	<!--<script type="text/javascript">
+		window.onscroll = function() {
+			if(window.scrollY > 300)
+				document.getElementById("mainNav").classList.remove("nav-scroll");
+			else
+				document.getElementById("mainNav").classList.add("nav-scroll");
+		}
+	</script>-->
+
+	<script type="text/javascript">
+		!function(a){"use strict";a('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=a(this.hash);if((e=e.length?e:a("[name="+this.hash.slice(1)+"]")).length)return a("html, body").animate({scrollTop:e.offset().top-48},1e3,"easeInOutExpo"),!1}}),a(".js-scroll-trigger").click(function(){a(".navbar-collapse").collapse("hide")}),a("body").scrollspy({target:"#mainNav",offset:54});var e=function(){a("#mainNav").offset().top>100?a("#mainNav").addClass("navbar-shrink"):a("#mainNav").removeClass("navbar-shrink")};e(),a(window).scroll(e)}(jQuery);
+	</script>
 
 </body>
 </html>

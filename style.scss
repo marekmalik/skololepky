@@ -85,6 +85,10 @@ a:hover, a:focus, .btn:hover, .btn:focus {opacity: .7; color: inherit;}
 }
 /* Konec - Animace skrolování myší */
 
+nav {
+	transition: all 1s;
+}
+
 .hero {
 	/*background: url(https://unsplash.it/g/1920/800/?random) no-repeat center center;*/
 	background-color: $color2;
@@ -92,7 +96,7 @@ a:hover, a:focus, .btn:hover, .btn:focus {opacity: .7; color: inherit;}
 	a, a:hover {color: $color3;}
 	.btn {border-color: $color3;}
 	.btn-primary, .btn-primary:hover {border-color: $color3;}
-	.row {height: 80vh;}
+	.row {height: 85vh;}
 }
 .slice [class*='container'] {padding-top: 8vh; padding-bottom: 8vh;}
 .slice.px-0 [class*='container'] {padding-top: 0 !important; padding-bottom: 0 !important;}
