@@ -130,3 +130,43 @@ nav {
 }
 .btn-primary, .btn-primary:hover {background-color: transparent; color: $color2; border: 1px solid $color2;}
 figure img {margin-bottom: 1rem;}
+
+.spacer {padding-top: 10vh; padding-bottom: 10vh; border-bottom: 1px solid #ccc;}
+.feature {background: #fff; border: 1px solid #ccc; min-height: 260px;}
+.card, .card-header:first-child {border-radius: 0;}
+#accordion .card:nth-child(-n+4) {
+	border-bottom: 0;
+}
+.card-header {border: none; padding: 1.25rem 30px !important;}
+.card-body {padding: 1.25rem 30px;}
+#pouziti li:before {content: "\2014\a0"; padding-right: 12px;}
+#pouziti li {list-style-type: none;}
+#pouziti ul {padding-left: 0 !important;}
+.navbar {padding: 1rem 1rem;}
+@media (max-width: 575px) {
+	.features .row .col-xl-3:first-child {margin-top: -100px;}
+}
+@media (min-width: 576px) and (max-width: 1199px) {
+	.features .row .col-xl-3:nth-child(-n+2) {margin-top: -100px;}
+}
+@media (min-width: 1200px) {
+	.f-1 {margin-top: -100px;}
+	.f-2 {margin-top: -150px;}
+}
+@media (min-width: 992px) {
+	#mainNav.navbar-shrink {
+	    border-color: rgba(34,34,34,.1);
+	    background-color: #fff;
+	    border-bottom: 1px solid #ccc;
+
+	}
+	#mainNav.navbar-shrink a {color: #aaa !important;}
+	.navbar-expand-lg .navbar-nav .nav-link {padding: 0;}
+	.navbar-expand-lg .navbar-nav .nav-item {
+	    padding-right: 1rem;
+	    padding-left: 1rem;
+	}
+	.navbar-expand-lg .navbar-nav .nav-item:last-child {
+		padding-right: 0;
+	}
+}

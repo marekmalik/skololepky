@@ -21,39 +21,13 @@
 		/*
 		PLACE YOUR STYLES HERE
 		*/
-		.spacer {padding-top: 10vh; padding-bottom: 10vh; border-bottom: 1px solid #ccc;}
-		/*.spacer {margin-bottom: 8vh;}
-		.spacer {margin-top: 8vh;}*/
-		.feature {background: #fff; border: 1px solid #ccc; height: 260px;}
-		.f-1 {margin-top: -100px;}
-		.f-2 {margin-top: -150px;}
-		.card, .card-header:first-child {border-radius: 0;}
-		#accordion .card:nth-child(-n+4) {
-			border-bottom: 0;
-		}
-		.btn.card-header {border: none;}
-		.card-body {padding: 1.25rem 30px;}
-		#pouziti li:before {content: "\2014\a0"; padding-right: 12px;}
-		#pouziti li {list-style-type: none;}
-		#pouziti ul {padding-left: 0 !important;}
-		.navbar {padding: 1rem 1rem;}
-		@media (min-width: 992px) {
-			#mainNav.navbar-shrink {
-			    border-color: rgba(34,34,34,.1);
-			    background-color: #fff;
-			    border-bottom: 1px solid #ccc;
 
-			}
-			#mainNav.navbar-shrink a {color: #aaa !important;}
-			.navbar-expand-lg .navbar-nav .nav-link {padding: 0;}
-			.navbar-expand-lg .navbar-nav .nav-item {
-			    padding-right: 1rem;
-			    padding-left: 1rem;
-			}
-			.navbar-expand-lg .navbar-nav .nav-item:last-child {
-				padding-right: 0;
-			}
-		}
+		/*
+		.collapse-accordion a[data-toggle=collapse] {display: block;padding:.75rem 1.25rem;}
+		*/
+		.accordion .card a[data-toggle=collapse] {display: block;padding:.75rem 1.25rem;}
+		.accordion .card-header {padding:0;}
+
 	</style>
 </head>
 <body>
@@ -113,25 +87,25 @@
 	<section id="vyhody">
 		<div class="container features">
 			<div class="row">
-				<div class="col-xl-3 col-sm-6">
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
 					<div class="feature f-1 p-4">
 						Lorem ipsum dolor Lorem<br>
 						Lorem ipsum dolor
 					</div>
 				</div>
-				<div class="col-xl-3 col-sm-6">
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
 					<div class="feature f-2 p-4">
 						Lorem ipsum dolor Lorem<br>
 						Lorem ipsum dolor
 					</div>
 				</div>
-				<div class="col-xl-3 col-sm-6">
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
 					<div class="feature f-1 p-4">
 						Lorem ipsum dolor Lorem<br>
 						Lorem ipsum dolor
 					</div>
 				</div>
-				<div class="col-xl-3 col-sm-6">
+				<div class="col-xl-3 col-sm-6 mb-3 mb-xl-0">
 					<div class="feature f-2 p-4">
 						Lorem ipsum dolor Lorem<br>
 						Lorem ipsum dolor
@@ -197,16 +171,16 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row mt-3">
-						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-6 col-xl-3 p-0">
 							<img alt="" src="https://unsplash.it/1920/1180/?random" class="img-fluid">
 						</a>
-						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-6 col-xl-3 p-0">
 							<img alt="" src="https://unsplash.it/1919/1179/?random" class="img-fluid">
 						</a>
-						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 mb-3 p-0">
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-6 col-xl-3 p-0">
 							<img alt="" src="https://unsplash.it/1918/1178/?random" class="img-fluid">
 						</a>
-						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-6 col-lg-3 p-0">
+						<a href="https://unsplash.it/1920/1080/?random" data-toggle="lightbox" data-gallery="example-gallery" class="col-12 col-sm-6 col-xl-3 p-0">
 							<img alt="" src="https://unsplash.it/1917/1177/?random" class="img-fluid">
 						</a>
 					</div>
@@ -227,22 +201,22 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
 					<h3>Samolepky na podlahy</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					<a href="#" target="_blank">Více informací</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
 					<h3>Samolepky na podlahy</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					<a href="#" target="_blank">Více informací</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
 					<h3>Samolepky na podlahy</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					<a href="#" target="_blank">Více informací</a>
 				</div>
-				<div class="col-lg-3 col-md-6">
+				<div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
 					<h3>Samolepky na podlahy</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					<a href="#" target="_blank">Více informací</a>
@@ -261,9 +235,13 @@
 				<div class="col-lg-10">
 					<div id="accordion" class="mb-4">
 						<div class="card">
-							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne" id="heading1">
-								Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis
-							</a>
+							<div class="card-header" role="tab" id="heading1">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+										Anim pariatur cliche reprehenderit, enim eiusmod
+									</a>
+								</h5>
+							</div>
 
 							<div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
 								<div class="card-body">
@@ -272,9 +250,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" id="heading2">
-								Vivamus vitae rhoncus felis, ut rutrum
-							</a>
+							<div class="card-header" role="tab" id="heading2">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+									</a>
+								</h5>
+							</div>
 
 							<div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
 								<div class="card-body">
@@ -283,9 +265,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" id="heading3">
-								Vivamus vitae rhoncus felis, ut rutrum Vivamus
-							</a>
+							<div class="card-header" role="tab" id="heading3">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life
+									</a>
+								</h5>
+							</div>
 
 							<div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
 								<div class="card-body">
@@ -294,9 +280,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4" id="heading4">
-								Vivamus vitae rhoncus felis, ut rutrum Vivamus vitae rhoncus felis
-							</a>
+							<div class="card-header" role="tab" id="heading4">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+										Anim pariatur cliche reprehenderit, enim eiusmod
+									</a>
+								</h5>
+							</div>
 
 							<div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
 								<div class="card-body">
@@ -305,9 +295,13 @@
 							</div>
 						</div>
 						<div class="card">
-							<a class="btn card-header text-left" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5" id="heading5">
-								Vivamus vitae rhoncus felis, ut rutrum
-							</a>
+							<div class="card-header" role="tab" id="heading5">
+								<h5 class="mb-0">
+									<a data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+										Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+									</a>
+								</h5>
+							</div>
 
 							<div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
 								<div class="card-body">
